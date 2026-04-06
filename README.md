@@ -1,10 +1,10 @@
-# CarbonKernel 🥗
+# FitDietKernel 🥗
 
-> **碳循环饮食的个人知识库**  
-> 让 AI 成为你的精准饮食教练，不再"随便猜"
+> **健身饮食的个人知识库**  
+> 无论你用什么饮食方法，AI 都能精准帮你算
 
-[![Stars](https://img.shields.io/github/stars/yibinpro/CarbonKernel?style=flat&color=2ecc71)](https://github.com/yibinpro/CarbonKernel)
-[![License](https://img.shields.io/github/license/yibinpro/CarbonKernel)](https://github.com/yibinpro/CarbonKernel)
+[![Stars](https://img.shields.io/github/stars/yibinpro/FitDietKernel?style=flat&color=2ecc71)](https://github.com/yibinpro/FitDietKernel)
+[![License](https://img.shields.io/github/license/yibinpro/FitDietKernel)](https://github.com/yibinpro/FitDietKernel)
 
 ---
 
@@ -33,6 +33,18 @@ CarbonKernel
     ├── 2026-04-06.md         # 每日打卡
     └── weekly_report/        # AI 周报
 ```
+
+---
+
+## 🥋 支持的饮食方法
+
+| 饮食法 | 配置示例 |
+|--------|----------|
+| **碳循环** | 低95g / 中147g / 高315g |
+| **生酮** | 碳水<30g，脂肪>70% |
+| **增肌** | 碳水400g+，蛋白200g+ |
+| **减脂** | 碳水150g，蛋白180g |
+| **16:8间歇断食** | 进食窗口 12:00-20:00 |
 
 ---
 
@@ -105,9 +117,9 @@ AI 自动更新数据库，下次直接查。
 
 ## 📖 谁适合用
 
-- 🥗 碳循环/生酮/增肌减脂人群
-- 🏋️ 需要精确控制碳水的人
-- 🤖 使用 AI 辅助健身的人
+- 🏋️ 任何健身饮食法的人
+- 🥗 碳循环 / 生酮 / 增肌 / 减脂 / 间歇断食
+- 🤖 用 AI 辅助健身的人
 
 ---
 
@@ -126,5 +138,5 @@ MIT - 你自己的数据，存在你自己的仓库。
 ---
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=yibinpro-CarbonKernel&label=Views&color=2ecc71" alt="Views">
+  <img src="https://komarev.com/ghpvc/?username=yibinpro-FitDietKernel&label=Views&color=2ecc71" alt="Views">
 </p>

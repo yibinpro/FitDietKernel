@@ -1,6 +1,6 @@
 {
   "name": "YEST1N",
-  "bio": "健身爱好者 / 碳循环执行者",
+  "bio": "健身爱好者",
   "height": 180,
   "currentWeight": 89.2,
   "targetWeight": 85,
@@ -9,12 +9,11 @@
     "bmr": 1850,
     "tdee": 2800
   },
-  "diabetes": false,
-  "allergies": [],
+  "dietType": "carbon_cycling",
   "carbonCycle": {
-    "low": { "c": 95, "p": 135, "f": 126, "label": "清空日" },
-    "medium": { "c": 147, "p": 135, "f": 59, "label": "稳定日" },
-    "high": { "c": 315, "p": 135, "f": 38, "label": "爆发日" }
+    "low": { "c": 95, "p": 135, "f": 126, "label": "低碳日" },
+    "medium": { "c": 147, "p": 135, "f": 59, "label": "中碳日" },
+    "high": { "c": 315, "p": 135, "f": 38, "label": "高碳日" }
   },
   "schedule": {
     "monday": "low",
