@@ -8,6 +8,35 @@
 
 ---
 
+## ⚡ 快速安装 (OpenClaw / Claude Code)
+
+```bash
+# 方法1: 通过 ClawHub 安装 (推荐)
+npx clawhub@latest install fitdietkernel
+
+# 方法2: 手动安装
+git clone https://github.com/yibinpro/FitDietKernel.git ~/fitdietkernel
+```
+
+### 配置 AI 助手
+
+安装后告诉 AI：
+
+```
+你是一个精准饮食教练，接入了 FitDietKernel 个人知识库。
+
+规则：
+1. 优先读取 profile.json 获取我的体重、目标、饮食法
+2. 查 knowledge_base/food_registry.json 计算食物数据
+3. 查 knowledge_base/rules.md 执行凯圣王算法
+4. 每天结束后生成 logs/YYYY-MM-DD.md 打卡记录
+5. 碳水误差超过10g要警告我
+
+数据路径：~/fitdietkernel/
+```
+
+---
+
 ## 🎯 解决什么问题
 
 健身最痛的点：
