@@ -26,15 +26,23 @@
     "sunday": "low"
   },
   
-  "carbonMultiplier": {
-    "low": 1.0,
-    "medium": 1.5,
-    "high": 3.0
-  },
-  
-  "protein": {
-    "target": 135,
-    "unit": "g"
+  "macroCalculator": {
+    "protein": {
+      "multiplier": 1.5,
+      "unit": "g/kg",
+      "note": "增肌1.5~2g/kg，减脂2~2.5g/kg"
+    },
+    "fat": {
+      "calculation": "remainder",
+      "note": "剩余热量给脂肪"
+    },
+    "carbon": {
+      "low": 1.0,
+      "medium": 1.5,
+      "high": 3.0,
+      "unit": "g/kg",
+      "note": "按体重倍数"
+    }
   },
   
   "sleep": {
