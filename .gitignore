@@ -1,0 +1,13 @@
+# BioContext-Kernel
+
+## 忽略文件
+
+*.pyc
+__pycache__/
+.DS_Store
+*.log
+
+## 本地配置 (请勿提交)
+
+local_config.json
+.env
