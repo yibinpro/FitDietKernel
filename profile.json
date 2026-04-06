@@ -5,16 +5,17 @@
   "currentWeight": 89.2,
   "targetWeight": 85,
   "targetDate": "2026-12-31",
+  "age": 30,
+  "gender": "male",
+  "activityLevel": "moderate",
+  "dietType": "carbon_cycling",
+  
   "metabolism": {
     "bmr": 1850,
-    "tdee": 2800
+    "tdee": 2800,
+    "calculationMethod": "mifflin-st-jeor"
   },
-  "dietType": "carbon_cycling",
-  "carbonCycle": {
-    "low": { "c": 95, "p": 135, "f": 126, "label": "低碳日" },
-    "medium": { "c": 147, "p": 135, "f": 59, "label": "中碳日" },
-    "high": { "c": 315, "p": 135, "f": 38, "label": "高碳日" }
-  },
+  
   "schedule": {
     "monday": "low",
     "tuesday": "medium",
@@ -24,10 +25,23 @@
     "saturday": "high",
     "sunday": "low"
   },
+  
+  "carbonMultiplier": {
+    "low": 1.0,
+    "medium": 1.5,
+    "high": 3.0
+  },
+  
+  "protein": {
+    "target": 135,
+    "unit": "g"
+  },
+  
   "sleep": {
     "window": "23:00 - 06:00",
-    "target": "11点关机",
+    "target": "23:00",
     "average": "23:30"
   },
+  
   "lastUpdated": "2026-04-06"
 }

@@ -62,14 +62,28 @@ FitDietKernel
   "name": "你的名字",
   "currentWeight": 80,
   "targetWeight": 75,
-  "dietType": "carbon_cycling",
-  "carbonCycle": {
-    "low": { "c": 95, "p": 135, "f": 126 },
-    "medium": { "c": 147, "p": 135, "f": 59 },
-    "high": { "c": 315, "p": 135, "f": 38 }
-  }
+  "height": 175,
+  "age": 30,
+  "activityLevel": "moderate",
+  "dietType": "carbon_cycling"
 }
 ```
+
+**碳循环计算公式**（AI 自动帮你算）：
+
+```
+基础代谢 (BMR) = 体重(kg) × 23
+运动消耗 (TDEE) = BMR × 1.4 ~ 1.6
+
+低碳日碳水 = 体重 × 1g
+中碳日碳水 = 体重 × 1.5g  
+高碳日碳水 = 体重 × 3g
+```
+
+比如 80kg 体重：
+- 低碳日：80g
+- 中碳日：120g
+- 高碳日：240g
 
 ### 3. 接入 AI（OpenClaw 示例）
 
