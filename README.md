@@ -1,4 +1,4 @@
-# FitDietKernel 🥗
+# FitDietKernel 🏋️
 
 > **健身饮食的个人知识库**  
 > 无论你用什么饮食方法，AI 都能精准帮你算
@@ -12,8 +12,8 @@
 
 健身最痛的点：
 
-| 痛点 | 传统 AI | CarbonKernel |
-|------|---------|--------------|
+| 痛点 | 传统 AI | FitDietKernel |
+|------|---------|---------------|
 | "这个能吃吗" | "馒头碳水高，少吃" | "1个=18.5g碳水，今天MC日能吃2个" |
 | "今天吃超了吗" | "大概没超吧" | "实际52g，目标147g，-95g安全" |
 | "上次那个食物呢" | "抱歉我忘了" | **永远记得** |
@@ -23,12 +23,12 @@
 ## 🏗️ 项目结构
 
 ```
-CarbonKernel
-├── profile.json              # 你是谁：体重、目标、碳循环档位
+FitDietKernel
+├── profile.json              # 你是谁：体重、目标、饮食法
 ├── knowledge_base/
-│   ├── food_registry.json    # 你的食物数据库（精准碳水）
+│   ├── food_registry.json    # 你的食物数据库（精准数据）
 │   ├── recipes.json         # 验证过的食谱
-│   └── rules.md              # 核心规则：误差控制、进食顺序
+│   └── rules.md              # 核心规则
 └── logs/
     ├── 2026-04-06.md         # 每日打卡
     └── weekly_report/        # AI 周报
@@ -62,10 +62,11 @@ CarbonKernel
   "name": "你的名字",
   "currentWeight": 80,
   "targetWeight": 75,
+  "dietType": "carbon_cycling",
   "carbonCycle": {
-    "low": 95,
-    "medium": 147,
-    "high": 315
+    "low": { "c": 95, "p": 135, "f": 126 },
+    "medium": { "c": 147, "p": 135, "f": 59 },
+    "high": { "c": 315, "p": 135, "f": 38 }
   }
 }
 ```
@@ -76,8 +77,8 @@ CarbonKernel
 你是一个精准饮食教练。
 
 规则：
-1. 读 profile.json 获取我的碳水预算
-2. 查 food_registry.json 计算食物碳水
+1. 读 profile.json 获取我的饮食目标和预算
+2. 查 food_registry.json 计算食物数据
 3. 告诉我今天还能吃多少
 ```
 
@@ -85,7 +86,7 @@ CarbonKernel
 
 ## 💡 核心功能
 
-### 🔢 精准碳水计算
+### 🔢 精准计算
 
 ```
 问：今天能吃几个馒头？
@@ -93,8 +94,8 @@ CarbonKernel
 - 你的馒头：1个 = 18.5g 碳水
 - 今天是 MC 日，预算 147g
 - 已吃：65g燕麦 + 50g蓝莓 = 40g
-- 剩余：147 - 40 = 107g
-- 可以吃：107 ÷ 18.5 = **5.7个**
+- 剩余：107g
+- 可以吃：5.7个
 ```
 
 ### 📊 误差追踪
@@ -128,6 +129,12 @@ AI 自动更新数据库，下次直接查。
 - 数据存本地/GitHub，隐私安全
 - 纯 JSON + Markdown，无数据库
 - 配合任意 AI（ChatGPT/OpenClaw/Claude）
+
+---
+
+## 🤝 欢迎贡献
+
+Fork 项目，添加你的饮食法配置，分享给更多人！
 
 ---
 
