@@ -1,0 +1,9 @@
+{
+  "schema": "openclaw@v1",
+  "name": "FitDietKernel",
+  "version": "1.0.0",
+  "description": "健身饮食的个人知识库",
+  "author": "YEST1N",
+  "tags": ["diet", "fitness", "carbon-cycling", "macro", "health"],
+  "category": "productivity"
+}
